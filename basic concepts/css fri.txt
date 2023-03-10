@@ -1,0 +1,420 @@
+<html>  
+<head>  
+<style>  
+h3.small {  
+    line-height: 70%;  
+}  
+h3.big {  
+    line-height: 200%;  
+}  
+</style>  
+</head>  
+<body>  
+<h3>  
+This is a heading with a standard line-height.<br>  
+This is a heading with a standard line-height.<br>  
+The default line height in most browsers is about 110% to 120%.<br>  
+</h3>  
+<h3 class="small">  
+This is a heading with a smaller line-height.<br>  
+This is a heading with a smaller line-height.<br>  
+This is a heading with a smaller line-height.<br>  
+This is a heading with a smaller line-height.<br>  
+</h3>  
+<h3 class="big">  
+This is a heading with a bigger line-height.<br>  
+This is a heading with a bigger line-height.<br>  
+This is a heading with a bigger line-height.<br>  
+This is a heading with a bigger line-height.<br>  
+</h3>  
+</body>  
+</html>  
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.ex {  
+    margin-top: 50px;  
+    margin-bottom: 50px;  
+    margin-right: 100px;  
+    margin-left: 100px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This paragraph is not displayed with specified margin. </p>  
+<p class="ex">This paragraph is displayed with specified margin.</p>  
+</body>  
+</html>
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.ex {  
+    margin: 50px 100px 150px 200px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This paragraph is not displayed with specified margin. </p>  
+<p class="ex">This paragraph is displayed with specified margin.</p>  
+</body>  
+</html
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.ex {  
+    margin: 50px 100px 150px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This paragraph is not displayed with specified margin. </p>  
+<p class="ex">This paragraph is displayed with specified margin.</p>  
+</body>  
+</html>   
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.ex {  
+    margin: 50px 100px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This paragraph is not displayed with specified margin. </p>  
+<p class="ex">This paragraph is displayed with specified margin.</p>  
+</body>  
+</html> 
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.ex {  
+    margin: 50px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This paragraph is not displayed with specified margin. </p>  
+<p class="ex">This paragraph is displayed with specified margin.</p>  
+</body>  
+</html>   
+
+<html>  
+<head>  
+<style>  
+img.trans {  
+    opacity: 0.4;  
+    filter: alpha(opacity=40); /* For IE8 and earlier */  
+}  
+</style>  
+</head>  
+<body>  
+<p>Normal Image</p>  
+<img src="rose.jpg" alt="normal rose">  
+<p>Transparent Image</p>  
+<img class="trans" src="rose.jpg" alt="transparent rose">  
+</body>  
+</html>  
+
+
+<html>  
+<head>  
+<style>  
+div.scroll {  
+    background-color: #00ffff;  
+    width: 100px;  
+    height: 100px;  
+    overflow: scroll;  
+}  
+  
+div.hidden {  
+    background-color: #00FF00;  
+    width: 100px;  
+    height: 170px;  
+    overflow: hidden; 
+    margin:right; 
+}  
+</style>  
+</head>  
+<body>  
+<p>The overflow property specifies what to do if the content of an element exceeds the size of the element's box.</p>  
+<p>overflow:scroll</p>  
+<div class="scroll">You can use the overflow property when you want to have better control of the layout.  
+ The default value is visible.</div>  
+<p>overflow:hidden</p>  
+<div class="hidden">You can use the overflow property when you want to have better control of the layout.   
+The default value is visible.</div>  
+</body>  
+</html>  
+
+<html>  
+<head>  
+<style>  
+p {  
+    background-color: pink;  
+}  
+p.padding {  
+    padding-top: 50px;  
+    padding-right: 100px;  
+    padding-bottom: 150px;  
+    padding-left: 200px;  
+}  
+</style>  
+</head>  
+<body>  
+<p>This is a paragraph with no specified padding.</p>  
+<p class="padding">This is a paragraph with specified paddings.</p>  
+</body>  
+</html>  
+
+
+<html>  
+<head>  
+<style>  
+p.pos_fixed {  
+    position: fixed;  
+    top: 50px;  
+    right: 5px;  
+    color: blue;  
+}  
+</style>  
+</head>  
+<body>  
+  
+<p>Some text...</p><p>Some text...</p><p>Some text...</p><p>........</p><p>.... ...</p  
+><p>........</p><p>........</p><p>........</p><p>........</p>  
+<p>........ </p><p>........</p><p>........</p><p>........</p><p>........</p>  
+<p>........</p><p>........</p><p>Some text...</p><p>Some text...</p><p>Some text...</p>  
+<p class="pos_fixed">This is the fix positioned text.</p>  
+</body>  
+</html>
+
+<html>  
+<head>  
+<style>  
+h2.pos_left {  
+    position: relative;  
+    left: -30px;  
+}  
+h2.pos_right {  
+    position: relative;  
+    left: 30px;  
+}  
+</style>  
+</head>  
+<body>  
+<h2>This is a heading with no position</h2>  
+<h2 class="pos_left">This heading is positioned left according to its normal position</h2>  
+<h2 class="pos_right">This heading is positioned right according to its normal position</h2>  
+<p>The style "left:-30px" subtracts 30 pixels from the element's original left position.</p>  
+<p>The style "left:30px" adds 30 pixels to the element's original left position.</p>  
+</body>  
+</html>  
+
+<html>  
+<head>  
+<style>  
+h2 {  
+    position: absolute;  
+    left: 150px;  
+    top: 250px;  
+}  
+</style>  
+</head>  
+<body>  
+<h2>This heading has an absolute position</h2>  
+<p> The heading below is placed 150px from the left and 250px from the top of the page.</p>  
+</body>  
+</html>  
+
+
+<html>  
+<head>  
+<style>  
+img.top {  
+    vertical-align: text-top;  
+}  
+img.bottom {  
+    vertical-align: text-bottom;  
+}  
+</style>  
+</head>  
+<body>  
+<p><img src="good-morning.jpg" alt="Good Morning Friends"/> This is an image with a default alignment.</p>   
+<p><img src="good-morning.jpg" class="top" alt="Good Morning Friends"/> This is an image with a text-top alignment.</p>   
+<p><img src="good-morning.jpg" class="bottom" alt="Good Morning Friends"/> This is an image with a text-bottom alignment.</p>  
+</body>  
+</html>  
+
+<html>  
+<head>  
+<style>  
+p {  
+    white-space: nowrap;  
+}  
+</style>  
+</head>  
+<body>  
+<p>  
+Write some text..Write some text..Write some text..  
+Write some text..Write some text..Write some text..  
+Write some text..Write some text..Write some text..  
+Write some text..Write some text..Write some text..  
+Write some text..Write some text..Write some text..  
+</p>  
+</body>  
+</html>  
+
+
+<html>  
+<head>  
+<style>  
+img.normal {  
+    width: auto;  
+}  
+img.big {  
+    width: 150px;  
+}  
+p.ex {  
+    height: 150px;  
+    width: 150px;  
+}  
+</style>  
+</head>  
+<body>  
+<img class="normal" src="good-morning.jpg" width="95" height="84"><br>  
+<img class="big" src="good-morning.jpg" width="95" height="84">  
+<p class="ex">The height and width of this paragraph is 150px.</p>  
+<p>This is a paragraph.</p>  
+</body>  
+</html> 
+
+
+<html>  
+<head>  
+<style>  
+img.normal {  
+    width: auto;  
+}  
+img.big {  
+    width: 50%;  
+}  
+img.small {  
+    width: 10%;  
+}  
+</style>  
+</head>  
+<body>  
+<img class="normal" src="good-morning.jpg" width="95" height="84"><br>  
+<img class="big" src="good-morning.jpg" width="95" height="84"><br>  
+<img class="small" src="good-morning.jpg" width="95" height="84">  
+</body>  
+</html>  
+
+
+<html>  
+<head>  
+<style>   
+p.test {  
+    width: 11em;  
+    background-color: #00ffff;   
+    border: 1px solid #000000;  
+    padding:10px;  
+    word-wrap: break-word;  
+}  
+</style>  
+</head>  
+<body>  
+<p class="test"> In this paragraph, there is a very long word:  
+ iamsooooooooooooooooooooooooooooooolongggggggggggggggg.The long word will break and wrap to the next line.</p>  
+</body>  
+</html>  
+
+
+<html>  
+<style type="text/css">  
+.box {  
+        background-color: #eee;  
+        outline: 3px solid red;  
+        border: 3px solid lightgreen;  
+        padding: 5px 10px;  
+}  
+</style>  
+<div class="box">Welcome to css</div>  
+</body>  
+  
+
+</html>  
+
+
+<html>  
+<style type="text/css">  
+.box {  
+        background-color: #eee;  
+        border: 3px solid Lightgreen;  
+        padding: 5px 10px;  
+        outline-width: 3px;  
+        outline-style: solid;  
+        outline-color: red;  
+}  
+</style>  
+<div class="box">Welcome to Css</div>  
+</body>  
+</html>
+
+
+<html>  
+<style type="text/css">  
+.box {  
+        outline-color: red;  
+        outline-width: 4px;  
+        margin: 10px;  
+        float: left;  
+        border: 2px solid lightgreen;  
+        padding: 5px 10px;  
+}  
+</style>  
+<div class="box" style="outline-style: dashed;">This is dashed outline.</div>  
+<div class="box" style="outline-style: dotted;">This is dotted outline.</div>  
+<div class="box" style="outline-style: double;">This is double outline.</div>  
+<div class="box" style="outline-style: groove;">This is groove outline.</div>  
+<div class="box" style="outline-style: inset;">This is inset outline.</div>  
+<div class="box" style="outline-style: outset;">This is outset outline.</div>  
+<div class="box" style="outline-style: ridge;">This is ridge outline.</div>  
+<div class="box" style="outline-style: solid;">This is solid outline.</div>  
+</body>  
+</html>  
+
+
+<html>  
+<style type="text/css">  
+.box {  
+        background-color: #eee;  
+        outline: 3px solid red;  
+        outline-offset: 6px;  
+        border: 3px solid Lightgreen;  
+        padding: 5px 10px;  
+}  
+</style>  
+<div class="box">Welcome to Css</div>  
+</body>  
+</html>  
